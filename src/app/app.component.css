@@ -1,0 +1,108 @@
+body {
+    background: hsla(205, 46%, 10%, 1);
+
+    background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1);
+
+    color: whitesmoke;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 70px;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, yellow, green, cyan);
+    border-image-slice: 1;
+}
+
+.home{
+    padding-top: 0px !important;
+}
+
+.nvb {
+    width: 100%;
+    min-height: 20px;
+    margin-top: 0px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    background: wheat;
+    z-index: 100;
+}
+
+.homerow{
+    padding: 50px 0 50px 0;
+    align-items: inline;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.welcome{
+    display: inline-flex;
+    /*align-items: center;*/
+    justify-content: center;
+    align-self: center;
+    margin: 75px;
+}
+
+.frm{
+    display: inline-flex;
+}
+
+.frmbtn{
+    margin-left: 10px;
+}
+
+.nvb-brand {
+    text-decoration: none;
+    font-size: larger;
+}
+
+.nvb-link {
+    text-decoration: none;
+    font-size: large;
+    padding-top: 15px;
+}
+
+.theme{
+    background: transparent;
+    border: none;
+}
+
+.bgtheme{
+    height: 50px;
+    width: 60px;
+    background: transparent;
+}
+
+.contact{
+    font-size: larger;
+    text-align: center;
+}
+
+.formcontainer{
+    
+    text-align: center;
+}
+
+.contacthead{
+    background: -webkit-linear-gradient( rgb(233, 77, 77), rgb(84, 223, 84), lightblue);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 2%;
+}
+
+@media ( width <= 768px ) {
+    .abc{
+        margin: 10px;
+    }
+}
