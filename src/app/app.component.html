@@ -1,4 +1,4 @@
-<body [style.background]="darkmode? '' : 'white'" [style.color]="darkmode? '': 'black'">
+<body [style.background]="darkmode? 'black' : 'white'" [style.color]="darkmode? 'white': 'black'">
 
     <!--Navbar-->
     <nav class="nvb navbar navbar-expand-lg">
@@ -42,9 +42,8 @@
     </nav>
 
     <!--home page-->
-    <section class="home" id="home">
-        <h1 style="text-align: center; padding: 20px;">-- HOME --</h1>
-        <div class="container-fluid row">
+    <section class="home p-md-5" id="home" [style]="darkmode ? 'background-image: url(./assets/images/bg_image_dark.jpg)' : 'background-image: url(./assets/images/bg_image_light.jpg)'">
+        <div class="container-fluid row m-md-5">
             <div class="abc col-sm-12 col-md-5" style="object-fit: contain; text-align: center;">
                 <img src="./assets/images/Welcome.png" alt="Welcome To my Portfolio"
                     style="background: transparent; max-width: 100%;">
@@ -57,27 +56,11 @@
     </section>
 
     <!--about page-->
-    <section class="about" id="about">
-        <h1 style="text-align: center; padding: 20px;">-- ABOUT --</h1>
-        <div class="container-fluid row">
-            <div class="abc container col-sm-12 col-md-5 border border-primary"
-                style="background-color: aliceblue; color: black; padding: 20px; overflow: auto;">
-                <h2>Personal - </h2>
-                <ul>
-                    <li>
-                        <b>Address-</b> Faridabad, Haryana
-                    </li>
-                    <li>
-                        <b>Whatsapp Number-</b> +91 9560718335
-                    </li>
-                    <li>
-                        <b>E-mail Address-</b> satyajeetpatra2001@gmail.com
-                    </li>
-                </ul>
-            </div>
-            <div class="abc container col-sm-12 col-md-5 border border-primary"
-                style="background-color: aliceblue; color: black; padding: 20px; overflow: auto;">
-                <h2>Skills -</h2>
+    <section class="about p-md-5" id="about">
+        <h1 style="text-align: center; padding: 20px;">About Me</h1>
+        <div class="container-fluid row m-md-5">
+            <div class="abc abctxt container col-sm-12 col-md-5 border border-primary">
+                <h3>Skills -</h3>
                 <ul>
                     <li>
                         <b>Angular-</b> <br>
@@ -130,16 +113,21 @@
                     </li>
                 </ul>
             </div>
+            <div class="abc abcimg container col-sm-12 col-md-5">
+                <img src="./assets/images/png1.png" alt="image">
+            </div>
         </div>
     </section>
 
     <!--qualification page-->
-    <section class="qual" id="qual">
-        <h1 style="text-align: center; padding: 20px;">-- QUALIFICATION --</h1><br><br>
-        <div class="container-fluid row">
-            <div class="abc container col-sm-12 col-md-5 border border-primary"
-                style="background-color: aliceblue; color: black; padding: 20px; overflow: auto;">
-                <h2>School - </h2>
+    <section class="qual p-md-5" id="qual">
+        <h1 style="text-align: center; padding: 20px;">Qualifications</h1><br><br>
+        <div class="container-fluid row m-md-5">
+            <div class="abc abcimg container col-sm-12 col-md-5">
+                <img src="./assets/images/png2.png" alt="image">
+            </div>
+            <div class="abc abctxt container col-sm-12 col-md-5 border border-primary">
+                <h3>School - </h3>
                 <ul>
                     <li>
                         Aggarwal Public School, Sector- 3, Faridabad — 10th & 12th (C.B.S.E Board).
@@ -155,11 +143,8 @@
                             Passed 10th class with a C.G.P.A of 8.8.
                         </li>
                     </ul>
-                </ul>
-            </div>
-            <div class="abc container col-sm-12 col-md-5 border border-primary"
-                style="background-color: aliceblue; color: black; padding: 20px; overflow: auto;">
-                <h2>College -</h2>
+                </ul><br>
+                <h3>College -</h3>
                 <ul>
                     <li>
                         Rao Birender Singh State Institute of Engineering and Technology (R.B.S-S.I.E.T), Rewari —
@@ -177,28 +162,11 @@
     </section>
 
     <!--experience page-->
-    <section class="exp" id="exp">
-        <h1 style="text-align: center; padding: 20px;">-- EXPERIENCE --</h1><br><br>
-        <div class="container-fluid row">
-            <div class="abc container col-sm-12 col-md-5 border border-primary"
-                style="background-color: aliceblue; color: black; padding: 20px; overflow: auto;">
-                <h2>Job background - </h2>
-                <ul>
-                    <li>
-                        <b>Fresher-</b> Looking for a full time job.
-                    </li>
-                    <li>
-                        To work on a challenging job profile which provides an opportunity to enhance my skills and
-                        Knowledge.
-                    </li>
-                    <li>
-                        This could provide me an insight into new aspects so that it would be helpful for my career.
-                    </li>
-                </ul>
-            </div>
-            <div class="abc container col-sm-12 col-md-5 border border-primary"
-                style="background-color: aliceblue; color: black; padding: 20px; overflow: auto;">
-                <h2>Internship --</h2>
+    <section class="exp p-md-5" id="exp">
+        <h1 style="text-align: center; padding: 20px;">Experience</h1><br><br>
+        <div class="container-fluid row m-md-5">
+            <div class="abc abctxt container col-sm-12 col-md-5 border border-primary">
+                <h3>Internship - </h3>
                 <ul>
                     <li>
                         Completed a 6 months internship in New Delhi at a well known organization named <b>The Energy
@@ -216,80 +184,79 @@
                         <li>SQL, and many more..</li>
                     </ul>
                 </ul>
+                <h3>Job background - </h3>
+                <ul>
+                    <li>
+                        <b>Fresher-</b> Looking for a full time job.
+                    </li>
+                    <li>
+                        To work on a challenging job profile which provides an opportunity to enhance my skills and
+                        Knowledge.
+                    </li>
+                    <li>
+                        This could provide me an insight into new aspects so that it would be helpful for my career.
+                    </li>
+                </ul>
+            </div>
+            <div class="abc abcimg container col-sm-12 col-md-5">
+                <img src="./assets/images/png3.png" alt="image">
             </div>
         </div>
     </section>
 
     <!--contact page-->
-    <section class="contact container" id="contact">
-        <!--h1 style="text-align: center; padding: 20px;">-- CONTACT --</h1><br><br-->
-        <div class="container mb-5">
-            <h1 class="contacthead">CONTACT US</h1><br>
-            <form action="https://formspree.io/f/mqkvzyoo" method="POST">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <label>
-                            Your email:
-                        </label>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <input type="email" name="email" required>
-                    </div>
+    <section class="contact p-md-5" id="contact">
+        <div class="container-fluid row m-md-5">
+            <div class="abc container col-sm-12 col-md-5" style="padding: 20px; overflow: auto;">
+                <div class="container">
+                    <h5>To contact</h5>
+                    <p>me you can Whatsapp me on my number or feel free to drop an email.<br>
+                        You can also reach me on my Linkedin and Twitter.<br><br>
+                        You can also send me a message through the contact form.<br></p><br>
                 </div>
-
-                <br><br>
-
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <label>
-                            Your contact number:
-                        </label>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12">
-                        <input type="number" minlength="10" maxlength="10" name="cno">
-                    </div>
+                <div class="container border border-primary"
+                    style="background-color: aliceblue; color: black; padding: 20px; overflow: auto;">
+                    <a href=""><img class="px-2" src="./assets/images/twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/in/satyajeet-patra-23bb70179"><img class="px-2"
+                            src="./assets/images/linkedin.svg" alt="linkedin"></a><br><br>
+                    <h5>Address- </h5> Faridabad, Haryana<br>
+                    <h5>Whatsapp Number- </h5> +91 9560718335<br>
+                    <h5>E-mail Address- </h5> satyajeetpatra2001@gmail.com
                 </div>
+            </div>
 
-                <br><br>
+            <div class="abc abcimg abcform container col-sm-12 col-md-5 border p-5">
+                <form action="https://formspree.io/f/mqkvzyoo" method="POST">
 
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <label>
-                            Your message:
-                        </label>
+                    <input type="text" name="name" placeholder="Enter Your Name" required>
+
+                    <br><br>
+
+                    <input type="email" name="email" placeholder="Enter Your E-mail" required>
+
+                    <br><br>
+
+                    <input type="number" minlength="10" maxlength="10" name="cno" placeholder="Enter Your Number" >
+
+                    <br><br>
+
+                    <textarea name="message" placeholder="Leave Your Message"></textarea><br>
+
+                    <br><br>
+
+                    <div style="align-items: center;">
+                        <button class="btn btn-primary" type="submit">Send</button>
                     </div>
 
-                    <div class="col-md-6 col-sm-12">
-                        <textarea name="message"></textarea><br>
-                    </div>
-                </div>
-
-                <br><br>
-
-                <div style="align-items: center;">
-                    <button [style.color]="darkmode? '' : 'white' " [style.background]="darkmode? '' : 'grey' "
-                        style="width: 70" type="submit">Send</button>
-                </div>
-
-            </form>
+                </form>
+            </div>
         </div>
 
     </section>
     <div class="container-fluid footer"
         style="background-color: #f5bae8; width: 100%; color: black; margin-top: 5px; padding: 10px; display: inline-block;">
-        <div class="ml-3" style="display: inline-block;">
-            © 2023 <b style="color: red;">SATYAJEET</b>
-        </div>
-        <div class="mr-3" style="text-align: right; float: right;">
-            <a href=""><img class="px-2" src="./assets/images/twitter.svg" alt="Twitter"></a>
-            <a href="https://www.linkedin.com/in/satyajeet-patra-23bb70179"><img class="px-2" src="./assets/images/linkedin.svg" alt="linkedin"></a>
+        <div style="text-align: center;">
+            © 2023  <b>SATYAJEET</b>
         </div>
     </div>
 </body>
-
-<!--div class="progress">
-    <div class="progress-bar bg-warning progress-bar-striped progress-bar-animated" role="progressbar"
-        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-</div-->

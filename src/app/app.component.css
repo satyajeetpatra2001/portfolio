@@ -1,28 +1,15 @@
-body {
-    background: hsla(205, 46%, 10%, 1);
-
-    background: linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
-
-    background: -moz-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
-
-    background: -webkit-linear-gradient(90deg, hsla(205, 46%, 10%, 1) 0%, hsla(191, 28%, 23%, 1) 50%, hsla(207, 41%, 27%, 1) 100%);
-
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#0E1C26", endColorstr="#2A454B", GradientType=1);
-
-    color: whitesmoke;
-}
-
 section {
     width: 100%;
-    min-height: 100vh;
-    padding-top: 70px;
     border-bottom: 1px solid transparent;
     border-image: linear-gradient(to right, yellow, green, cyan);
     border-image-slice: 1;
 }
 
-.home{
-    padding-top: 0px !important;
+.home {
+    background-image: url(../assets/images/bg_image_light.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nvb {
@@ -39,14 +26,14 @@ section {
     z-index: 100;
 }
 
-.homerow{
+.homerow {
     padding: 50px 0 50px 0;
     align-items: inline;
     width: 100%;
     justify-content: space-between;
 }
 
-.welcome{
+.welcome {
     display: inline-flex;
     /*align-items: center;*/
     justify-content: center;
@@ -54,11 +41,11 @@ section {
     margin: 75px;
 }
 
-.frm{
+.frm {
     display: inline-flex;
 }
 
-.frmbtn{
+.frmbtn {
     margin-left: 10px;
 }
 
@@ -73,36 +60,55 @@ section {
     padding-top: 15px;
 }
 
-.theme{
+.theme {
     background: transparent;
     border: none;
 }
 
-.bgtheme{
+.bgtheme {
     height: 50px;
     width: 60px;
     background: transparent;
 }
 
-.contact{
-    font-size: larger;
+.formcontainer {
+
     text-align: center;
 }
 
-.formcontainer{
-    
+.abctxt {
+    background-color: aliceblue;
+    color: black;
+    padding: 20px;
+    overflow: auto;
+}
+
+.abcimg {
+    display: flex;
+    object-fit: contain;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
-.contacthead{
-    background: -webkit-linear-gradient( rgb(233, 77, 77), rgb(84, 223, 84), lightblue);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-bottom: 2%;
+.abcimg img {
+    background: transparent;
+    max-width: 100%;
 }
 
-@media ( width <= 768px ) {
-    .abc{
+.abcform{
+    border-radius: 10%;
+    background-color: #fef7f7;
+}
+
+.abcform input, textarea{
+    background-color: #fbe3e3;
+    border: 1px;
+    border-radius: 5%;
+}
+
+@media (width <=768px) {
+    .abc {
         margin: 10px;
     }
 }
