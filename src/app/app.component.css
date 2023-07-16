@@ -107,8 +107,13 @@ section {
     border-radius: 5%;
 }
 
+.abchome{
+    margin-top: 130px;
+}
+
 @media (width <=768px) {
     .abc {
         margin: 10px;
     }
+
 }
